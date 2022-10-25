@@ -49,6 +49,9 @@ class Graph:
     def __str__(self):
         return str(self.vertices)
 
+
+
+#exemplo:
 if __name__ == '__main__':
     g = Graph()
     g.add_vertice('Barra', {'Pituba': 7, 'Costa azul': 8})
@@ -59,4 +62,4 @@ if __name__ == '__main__':
     g.add_vertice('Amaralina', {'Pituba': 2, 'Costa azul': 6, 'Boca do rio': 8, 'Imbui': 9, 'Rio Vermelho': 3})
     g.add_vertice('Imbui', {'Costa azul': 4, 'Amaralina': 9})
     g.add_vertice('Rio Vermelho', {'Ondina': 1, 'Amaralina': 3})
-    print(g.caminho_curto('Barra', 'Imbui'))
+    print(g.caminho_curto('Pituba', 'Ondina'))
